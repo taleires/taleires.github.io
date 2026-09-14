@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jucelino Taleires</title>
+    <style>
+        /* Estilos Globais (Tema Terminal Escuro) */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Contêiner centralizado */
+        .container {
+            max-width: 750px;
+            width: 100%;
+        }
+
+        /* Links */
+        a {
+            color: #00ff00; /* Verde neon */
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #00cc00;
+        }
+
+        /* Linhas separadoras com pontilhado/tracejado */
+        .divider {
+            border-bottom: 1px dashed #ffffff;
+            margin: 20px 0;
+        }
+
+        /* Menu superior estilo Prompt */
+        nav {
+            margin-bottom: 25px;
+        }
+
+        nav .prompt {
+            color: #888888;
+        }
+
+        nav a {
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Seção do Perfil (Foto + Informações) */
+        .profile-header {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            background-color: #333333; 
+        }
+
+        .profile-info h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .profile-info p {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Títulos das Seções */
+        h2 {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+
+        /* Listas sem marcador padrão */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 5px;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 4px;
+        }
+
+        /* Adiciona o hífen estilo terminal */
+        ul li::before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            color: #ffffff;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: right;
+            margin-top: 40px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Linha Superior -->
+        <div class="divider"></div>
+
+        <!-- Menu / Navegação -->
+        <nav>
+            <span class="prompt">[~]$</span>
+            <a href="index.html">/Início</a>
+            <a href="publicacoes.html">/Publicações</a>
+            <a href="ensino.html">/Ensino</a>
+        </nav>
+
+        <!-- Linha abaixo do Menu -->
+        <div class="divider"></div>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <!-- Bloco do Perfil (Foto + Dados de contato) -->
+            <div class="profile-header">
+                <img src="sua-foto.jpg" alt="Foto de Jucelino Taleires" class="profile-pic">
+                
+                <div class="profile-info">
+                    <h1>Jucelino Taleires</h1>
+                    <p>
+                        Graduando em Matemática/Bacharelado<br>
+                        Universidade Federal do Ceará<br>
+                        Departamento de Matemática<br>
+                        Campus do Pici, Fortaleza-CE, Brasil<br>
+                        <a href="mailto:taleires@dee.ufc.br">taleires@dee.ufc.br</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sobre -->
+            <h2>Sobre:</h2>
+            <p>
+                Engenheiro Eletricista formado pela Universidade Federal do Ceará (2018). Possui mestrado em Engenharia Elétrica pela Universidade Federal do Ceará na área de controle e acionamento de máquinas elétricas (2021) (<a href="http://lattes.cnpq.br/7583063988576483" target="_blank">Lattes</a>).
+            </p>
+
+            <!-- Interesses de pesquisa -->
+            <h2>Interesses de pesquisa:</h2>
+            <ul>
+                <li>Máquinas elétricas</li>
+                <li>Acionamento de máquinas</li>
+                <li>Controle ótimo/robusto</li>
+                <li>Automação industrial</li>
+            </ul>
+
+            <!-- Formação acadêmica -->
+            <h2>Formação acadêmica:</h2>
+            <ul>
+                <li>Graduando em Matemática/Bacharelado (<a href="https://matematica.ufc.br/pt/apresentacao/" target="_blank">UFC</a>)</li>
+                <li>Mestrado em Engenharia Elétrica (<a href="https://ppgee.ufc.br/pt/pagina-de-introducao/" target="_blank">UFC</a>)</li>
+                <li>Graduação em Engenharia Elétrica (<a href="https://ccee.ufc.br/pt/" target="_blank">UFC</a>)</li>
+            </ul>
+        </main>
+
+        <!-- Linha abaixo do conteúdo -->
+        <div class="divider"></div>
+
+        <!-- Rodapé -->
+        <footer>
+            Jucelino Taleires
+        </footer>
+
+    </div>
+
+</body>
+</html>
